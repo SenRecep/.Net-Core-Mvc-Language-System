@@ -1,0 +1,8 @@
+﻿@inject ILocalizationService localizationService
+@{
+    localizationService.UseActionWords();
+}
+<div class="text-center">
+    <h1 class="display-4">@localizationService.get("Title")</h1>
+    <p>@localizationService.get("Description")</p>
+</div>
